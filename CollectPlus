@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ndxml version="2.0">
+    <credentials>
+       <identity>parcel132</identity>
+       <password>parcel132</password>
+	   <language name="Default_Velocity" modifier="en" />
+    </credentials>
+    <request id="1" function="createNewC2CJob" styleTag="DCL" responseType="labelURL">
+    	<!-- request payload here -->
+		<job jobType="HT">
+			<tariff code="SEND" />
+			<service code="ON" />
+			<account id="000001" />
+			<despDateTime date="2014-11-24" time="20:35:12" />
+			<reference>123455</reference>
+			<costcenter>PP000011111</costcenter>
+			<pieces>1</pieces>
+			<weight>10.00</weight>
+			<price currency="GBP">3.99</price>
+			<notes></notes>
+			<carrier code="HDNL" />
+			<style>
+				<dcl>
+					<agent site="5761" />
+				</dcl>
+			</style>
+			<segment number="1" type="P">
+				<address>
+					<name>IamSender-Name</name>
+					<company>IamSender-Company</company>
+					<address1>IamSender-address1</address1>
+					<address2>IamSender-address2</address2>
+					<address3>IamSender-address3</address3>
+					<town>Birmingham</town>
+					<county>W Midlands</county>
+					<zip>WS10 8PP</zip>
+					<country ISOCode="GB" />
+				</address>
+				<contact>
+					<contactStrategy>N</contactStrategy>
+					<telephone sequence="1" type="M" avail="A" countrycode="44" local="0" std="1628" number="66282" ext="123" />
+					<email address="test@gmail.com" />
+				</contact>
+			</segment>
+			
+			<segment number="2" type="D">
+				<address>
+					<name>Joe Bloggs</name>
+					<company>Joe Bloggs-Company</company>
+					<address1>Joe Bloggs-address1</address1>
+					<address2>Joe Bloggs-address2</address2>
+					<address3>Joe Bloggs-address3</address3>
+					<town>Joe Bloggs-London</town>
+					<county>Greater London</county>
+					<zip>SE12 0RE</zip>
+					<country ISOCode="GB" />
+				</address>
+				<contact>
+					<contactStrategy>N</contactStrategy>
+					<telephone sequence="1" type="M" avail="A" countrycode="44" local="0" std="1628" number="66282" ext="123" />
+					<email address="test@gmail.com" />
+				</contact>
+			</segment>
+			<issues>
+				<issue id="1233">1</issue>
+			</issues>
+		</job>
+    </request>
+</ndxml>
